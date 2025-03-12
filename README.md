@@ -37,5 +37,5 @@ Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau
 
 ---
 
-Kalau ada tambahan atau bagian yang perlu direvisi, tinggal bilang aja! 🚀🔥
+Kalau ada tambahan atau bagian yang perlu direvisi, marjo torang ngoding ! 🚀🔥
 
