@@ -33,7 +33,7 @@ SISPak Android adalah aplikasi sistem pakar untuk mendiagnosis penyakit pada ika
 - [ ] **Integrasi Firebase untuk autentikasi yang lebih aman.**
 
 ## 🤝 Kontribusi
-Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau buka issue di repository ini.  
+Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau buka issue di repository ini ✌️.  
 
 ---
 <table align="center">
