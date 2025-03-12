@@ -1,0 +1,1029 @@
+/* Mengatur gaya dasar */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #e6f2ff;
+  display: flex;
+}
+
+/* Styling untuk form penyakit.php*/
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  color: #333;
+}
+
+/* Efek hover pada baris */
+table tr:hover td {
+  background-color: #eef7ee;
+  cursor: pointer;
+}
+
+/* Tombol Kembali */
+.btn-back {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Memberikan jarak dari elemen bawah */
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Tombol Tambah Penyakit */
+.btn-tambah {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-tambah:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Efek Hover */
+.btn-back:hover {
+  background-color: #45a049; /* Ganti warna ketika hover */
+  transform: scale(1.05); /* Efek sedikit membesar ketika hover */
+}
+
+/* Efek Focus */
+.btn-back:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.4); /* Menambah efek focus */
+}
+
+/* Mengatur tombol Edit dan Hapus secara vertikal */
+.btn-actions {
+  display: flex;
+  flex-direction: column; /* Menyusun tombol secara vertikal */
+  align-items: center; /* Menyelaraskan tombol ke tengah */
+  gap: 10px; /* Memberikan jarak antar tombol */
+}
+
+/* Tombol Edit */
+.btn-edit {
+  display: inline-block;
+  padding: 8px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-edit i {
+  font-size: 20px;
+}
+
+.btn-edit:hover {
+  background-color: #45a049; /* Ganti warna ketika hover */
+  transform: scale(1.1); /* Efek sedikit membesar ketika hover */
+}
+
+/* Tombol Hapus */
+.btn-delete {
+  display: inline-block;
+  padding: 8px;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-delete i {
+  font-size: 20px;
+}
+
+.btn-delete:hover {
+  background-color: #e53935; /* Ganti warna ketika hover */
+  transform: scale(1.1); /* Efek sedikit membesar ketika hover */
+}
+
+/* Konfirmasi sebelum menghapus */
+a[onclick] {
+  cursor: pointer;
+}
+/* form tabel dari penyakit.php */
+
+/* form tambah penyakit dari tambahpenyakit.php */
+/* Styling untuk Form */
+select.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.form-tambahpenyakit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%; /* Form akan melebar ke kanan */
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%; /* Membuat input memenuhi lebar form */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  font-family: Poppins, sans-serif;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn-tambah-penyakit {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none; /* Menghilangkan border hitam */
+  transition: background-color 0.3s ease;
+  width: 100%; /* Membuat tombol memenuhi lebar form */
+}
+
+.btn-tambah-penyakit:hover {
+  background-color: #0056b3;
+  transition: 0.2s;
+  transform: scale(1.01);
+}
+
+.btn-tambah-penyakit:focus {
+  outline: none; /* Menghilangkan outline saat tombol difokuskan */
+}
+
+.btn-back-data {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back-data:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* form tambah penyakit dari tambahpenyakit.php */
+
+/* style gejala.php */
+/* Memastikan gaya hanya diterapkan pada halaman gejala */
+.gejala-main-container {
+  margin-left: 250px; /* Agar konten utama tidak tertutup sidebar */
+  width: calc(100% - 250px);
+  padding: 30px;
+}
+
+.gejala-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.gejala-table {
+  margin-left: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gejala-table th,
+.gejala-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: normal;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Header tabel dengan latar belakang hijau */
+.gejala-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Kolom-kolom di bawah header dengan latar belakang putih */
+.gejala-table td {
+  background-color: white;
+  color: #333;
+}
+
+/* Menambahkan warna latar belakang berbeda pada baris genap */
+.gejala-table tr:nth-child(even) td {
+  background-color: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+/* Efek hover pada baris */
+.gejala-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.gejala-table tr:hover td {
+  background-color: #eef7ee;
+  cursor: pointer;
+}
+/* Tombol Kembali */
+.btn-back-gejala {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Memberikan jarak dari elemen bawah */
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-tambah-gejala {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-tambah-gejala:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* batas gejala.php */
+
+/* style aturan.php */
+/* Memastikan gaya hanya diterapkan pada halaman aturan */
+.aturan-main-container {
+  margin-left: 250px; /* Agar konten utama tidak tertutup sidebar */
+  width: calc(100% - 250px);
+  padding: 30px;
+}
+
+.aturan-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.aturan-table {
+  margin-left: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: auto; /* Perbaikan: Menambahkan overflow auto untuk mencegah pemotongan konten */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aturan-table th,
+.aturan-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: normal;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Header tabel dengan latar belakang hijau */
+.aturan-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Kolom-kolom di bawah header dengan latar belakang putih */
+.aturan-table td {
+  background-color: white;
+  color: #333;
+}
+
+/* Menambahkan warna latar belakang berbeda pada baris genap */
+.aturan-table tr:nth-child(even) td {
+  background-color: #f9f9f9; /* Warna latar belakang baris genap */
+}
+
+/* Efek hover pada baris */
+.aturan-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.aturan-table tr:hover td {
+  background-color: #eef7ee;
+  cursor: pointer;
+}
+
+/* Tombol Kembali */
+.btn-aturan-back {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Memberikan jarak dari elemen bawah */
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-aturan-back:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Tombol Tambah Aturan */
+.btn-aturan-add {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Tombol Edit dan Hapus secara horizontal */
+.btn-aturan-actions {
+  display: grid;
+  gap: 10px; /* Memberikan jarak antar tombol */
+  justify-content: center; /* Tombol berada di sebelah kiri */
+}
+
+/* Tombol Edit */
+.btn-aturan-edit {
+  display: inline-block;
+  padding: 8px;
+  background-color: #4caf50; /* Hijau untuk tombol Edit */
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-aturan-edit i {
+  font-size: 20px; /* Ukuran ikon edit */
+}
+
+.btn-aturan-edit:hover {
+  background-color: #45a049; /* Warna lebih gelap ketika hover */
+  transform: scale(1.1); /* Efek sedikit membesar ketika hover */
+}
+
+/* Tombol Hapus */
+.btn-aturan-delete {
+  display: inline-block;
+  padding: 8px;
+  background-color: #f44336; /* Merah untuk tombol Hapus */
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-aturan-delete i {
+  font-size: 20px; /* Ukuran ikon hapus */
+}
+
+.btn-aturan-delete:hover {
+  background-color: #e53935; /* Warna lebih gelap ketika hover */
+  transform: scale(1.1); /* Efek sedikit membesar ketika hover */
+}
+
+/* SweetAlert Popup */
+.swal2-popup {
+  font-size: 16px;
+}
+
+.swal2-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* style untuk halaman tambah aturan */
+/* Kontainer utama untuk halaman */
+.moms-aturan-main-container {
+  margin-left: 250px; /* Agar konten utama tidak tertutup sidebar */
+  width: calc(100% - 250px);
+  padding: 30px;
+}
+
+.moms-aturan-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.moms-form-tambah-aturan {
+  max-width: 800px; /* Lebar lebih lebar */
+  margin: 0 auto; /* Agar form berada di tengah */
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.moms-form-group {
+  margin-bottom: 20px;
+}
+
+.moms-form-label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.moms-form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.moms-btn-tambah-aturan {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Membuat tombol selebar form */
+}
+
+.moms-btn-tambah-aturan:hover {
+  background-color: #0056b3;
+  transform: scale(1.01); /* Efek sedikit membesar ketika hover */
+}
+
+/* Tombol Kembali */
+.moms-btn-aturan-back {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* Memberikan jarak dari elemen bawah */
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.moms-btn-aturan-back:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.moms-form-group select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* SweetAlert Popup */
+.swal2-popup {
+  font-size: 16px;
+}
+
+.swal2-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* style editpengguna.php */
+/* Style untuk container utama */
+.edit-pengguna-container {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 70%; /* Atur lebar form (50% dari lebar layar) */
+  background-color: #f9f9f9; /* Warna background form */
+  padding: 20px; /* Padding dalam form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  border-radius: 8px; /* Border melengkung */
+}
+
+/* Heading form */
+.edit-pengguna-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form field styling */
+.edit-pengguna-container form div {
+  margin-bottom: 15px;
+}
+
+.edit-pengguna-container form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-pengguna-container form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tombol submit dan kembali */
+.edit-pengguna-container .btn-pengguna-add {
+  width: 100%; /* Tombol full-width */
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.edit-pengguna-container .btn-pengguna-add:hover {
+  background-color: #0056b3;
+}
+
+/* Tombol kembali warna abu-abu */
+.edit-pengguna-container
+  .btn-pengguna-add[style*="background-color: #6c757d;"] {
+  background-color: #6c757d !important;
+}
+
+/* style untuk halaman tambah aturan */
+/* Gaya Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #ffff;
+  color: #000000;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  padding-left: 20px;
+  transition: all 0.3s ease; /* Efek transisi ketika sidebar dipindahkan */
+  --animate-duration: 1.2s;
+}
+
+/* Sidebar saat hover */
+.sidebar:hover {
+  box-shadow: 0 0 20px 10px rgba(230, 242, 255, 0.7); /* Bayangan untuk efek hover */
+}
+
+.sidebar h2 {
+  display: flex;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600 !important;
+  justify-content: flex-start; /* Menyusun gambar dan teks ke kiri */
+  margin-left: 20px; /* Menambah margin kiri untuk seluruh h2 */
+  position: relative;
+}
+
+.sidebar h2 img {
+  width: 30px; /* Ukuran gambar */
+  height: 30px; /* Ukuran gambar */
+  margin-left: 10px; /* Jarak antara gambar dan teks */
+}
+
+/* Efek Hover pada h2 (Hanya teks yang berubah warna) */
+.sidebar h2:hover {
+  color: rgb(65, 163, 243); /* Mengubah warna teks menjadi putih */
+  transition: color 0.3s ease; /* Efek transisi pada warna teks */
+}
+.main-content h3:hover {
+  color: rgb(65, 163, 243); /* Mengubah warna teks menjadi putih */
+  transition: color 0.1s ease; /* Efek transisi pada warna teks */
+}
+
+/* Gambar tetap tidak berubah saat hover */
+.sidebar h2 img {
+  filter: none; /* Tidak ada perubahan pada gambar */
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.primary {
+  --animate-duration: 0.8s;
+}
+.line {
+  --animate-duration: 0.9s;
+}
+.sweet {
+  --animate-duration: 1.1s;
+}
+.beutiful {
+  --animate-duration: 1.2s;
+}
+.handsome {
+  --animate-duration: 1.3s;
+}
+.sidebar ul li {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li img {
+  width: 20px; /* Ukuran gambar */
+  height: 30px; /* Ukuran gambar */
+  margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.sidebar ul li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  display: flex; /* Flexbox untuk memudahkan pengaturan */
+  align-items: center; /* Menyusun gambar dan teks sejajar secara vertikal */
+}
+
+.sidebar ul li a:hover {
+  background-color: #e6f2ff; /* Warna latar belakang */
+  padding: 10px 15px; /* Menambah padding sisi kanan dan kiri */
+  box-shadow: 0 0 15px 5px rgba(230, 242, 255, 0.7); /* Efek bayangan di sekitar elemen */
+  border-radius: 10px; /* Membuat sudut lebih melengkung */
+}
+
+/* Gaya untuk konten utama */
+.main-content {
+  margin-left: 265px;
+  padding: 1% 4% 3%;
+  --animate-duration: 1.4s;
+}
+
+.main-content h3 {
+  font-size: 5vh; /* Skala font berdasarkan lebar viewport */
+  margin-top: 0.1em; /* Kurangi margin atas */
+  padding-top: 0; /* Pastikan tidak ada padding atas */
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 10px; /* Mengurangi jarak atas untuk memindahkan elemen lebih ke atas */
+}
+
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -30px; /* Menurunkan sedikit posisi nama dan ikon admin */
+}
+
+.admin-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.admin-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Wildcard */
+.wildcard-container {
+  display: flex;
+  gap: 3%;
+  --animate-duration: 1.1s;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 200px; /* Batas lebar maksimum */
+  margin-left: 0; /* Memusatkan secara horizontal */
+  margin-right: auto;
+}
+
+.info-img {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+}
+
+.info-details {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.info-text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.info-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a90e2;
+}
+/* Menambahkan transisi untuk setiap elemen wildcard */
+.wildcard-container > * {
+  transition: transform 0.4s ease, filter 0.1s ease, opacity 0.3s ease; /* Efek halus */
+}
+
+/* Ketika elemen wildcard di-hover */
+.wildcard-container > *:hover {
+  transform: scale(1.1); /* Membesarkan elemen yang di-hover */
+  z-index: 2; /* Membawa elemen yang di-hover ke atas */
+}
+
+/* Elemen lainnya menjadi blur hanya saat ada elemen yang di-hover */
+.wildcard-container:hover > *:not(:hover) {
+  filter: blur(5px); /* Membuat elemen lain blur */
+  opacity: 0.5; /* Mengurangi opacity elemen lain */
+}
+
+/* Wildcard */
+
+/* MainContent */
+
+/* Tombol Logout */
+.logout-btn {
+  background-color: transparent;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600 !important;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: flex; /* Gunakan flexbox untuk menyusun gambar dan teks */
+  align-items: center; /* Menyusun gambar dan teks sejajar secara vertikal */
+  justify-content: center; /* Menyusun gambar dan teks sejajar secara horizontal */
+  border-radius: 10px; /* Agar sudut tombol melengkung */
+  --animate-duration: 0.7s;
+}
+.logout-btn img {
+  width: 20px; /* Ukuran gambar */
+  height: 20px; /* Ukuran gambar */
+  margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+  transition: filter 0.3s ease; /* Transisi yang halus untuk efek filter */
+}
+
+.logout-btn:hover {
+  background-color: white; /* Warna saat hover */
+  color: #59aae7; /* Ubah warna teks menjadi putih saat hover */
+  transition: background-color 0.5s ease, color 0.3s ease; /* Animasi transisi untuk perubahan warna */
+}
+
+/* Efek Hover pada Gambar di Tombol */
+.logout-btn:hover img {
+  filter: invert(47%) sepia(100%) saturate(5365%) hue-rotate(163deg); /* Efek hover gambar */
+}
+
+/* Responsivitas dari penyakit.php */
+@media (max-width: 768px) {
+  table,
+  table th,
+  table td {
+    font-size: 14px;
+  }
+  .btn-back,
+  .btn-tambah {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+/* Responsivitas dari penyakit.php */
+
+@media screen and (max-width: 768px) {
+  .main-content h3 {
+    margin-top: 5px; /* Mengurangi jarak lebih jauh pada layar kecil */
+  }
+}
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  /* Sidebar pada layar kecil */
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+  }
+
+  /* Judul Menu di sidebar */
+  .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sidebar h2 img {
+    width: 25px; /* Mengurangi ukuran gambar di perangkat lebih kecil */
+    height: 25px;
+    margin-left: 8px; /* Menyesuaikan jarak pada perangkat lebih kecil */
+  }
+
+  /* Ukuran font item menu */
+  .sidebar ul li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  /* Tombol Logout */
+  .logout-btn {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  /* Konten utama */
+  .main-content {
+    margin-left: 220px;
+  }
+}
+
+/* Responsif untuk perangkat mobile (lebih kecil dari 600px) */
+@media screen and (max-width: 480px) {
+  /* Sidebar pada perangkat mobile */
+  .sidebar {
+    width: 100%; /* Sidebar menjadi penuh di perangkat mobile */
+    height: auto;
+  }
+
+  /* Daftar menu pada perangkat mobile */
+  .sidebar ul {
+    text-align: center; /* Menu disusun ke tengah */
+  }
+
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+
+  /* Tombol Logout */
+  .logout-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Konten utama */
+  .main-content {
+    margin-left: 0; /* Konten mengisi seluruh lebar layar */
+  }
+}

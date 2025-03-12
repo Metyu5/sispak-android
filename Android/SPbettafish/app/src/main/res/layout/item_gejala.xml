@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvNamaGejala"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Gejala"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/kategoriGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fontFamily="@font/poppins_regular">
+
+        <!-- RadioButton dapat ditambahkan secara dinamis -->
+    </RadioGroup>
+
+</LinearLayout>

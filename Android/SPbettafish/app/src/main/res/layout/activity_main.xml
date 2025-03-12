@@ -1,0 +1,116 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <!-- ImageView pertama -->
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView pertama -->
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titilliumweb_bold"
+        android:text="BETTA EXPERT"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp" />
+
+    <!-- TextView kedua -->
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titilliumweb_bold"
+        android:text="SYSTEM"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-10dp"/>
+
+    <!-- TextView ketiga -->
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titilliumweb_regular"
+        android:text="Mendiagnosa Penyakit Betta Fish Anda"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp" />
+
+    <!-- TextView keempat -->
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titilliumweb_regular"
+        android:text="Dengan Mudah dan Cepat"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp" />
+
+    <!-- TextView kelima -->
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titilliumweb_semibold"
+        android:text="'Rawat Betta Fish Anda dengan Teknologi Cerdas'"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt4"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp" />
+
+    <!-- ImageView kedua -->
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt5" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="@font/titilliumweb_semibold"
+        android:textColor="@color/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        android:width="325dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape" />
+</androidx.constraintlayout.widget.ConstraintLayout>

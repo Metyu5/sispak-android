@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="top_screen">#4C79E7</color>
+    <color name="background">#467CFF</color>
+    <color name="button">#0079EA</color>
+    <color name="bottom_background">#5FFF65</color>
+    <color name="primary">#29FEF3</color>
+    <color name="secondary">#C1FFFC</color>
+    <color name="last">#3867FC</color>
+    <color name="one">#D8FFA5</color>
+    <color name="edt">#CAECFF</color>
+    <color name="red">#FF0000</color>
+    <color name="dashboard">#4BB8D8</color>
+    <color name="diagnosa">#5E58D6</color>
+    <color name="purple">#5E58D6</color>
+
+</resources>

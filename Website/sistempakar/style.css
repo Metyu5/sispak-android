@@ -1,0 +1,242 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Menambahkan animasi pada container - telah dimatikan */
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* Menambahkan animasi pada container - telah dimatikan */
+/* .container {                                 
+  animation: fadeIn 1.1s ease-in;
+} */
+
+/* Responsif untuk seluruh halaman */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e6f2ff 50%, #027fff 50%);
+  --animate-duration: 0.7s;
+}
+
+/* Kontainer Utama */
+.container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* Membuat kontainer fleksibel pada layar kecil */
+  width: 85%;
+  height: 85vh;
+  border-radius: 20px;
+  overflow: hidden;
+  --animate-duration: 1.5s;
+}
+
+/* Bagian Kiri - Form Login */
+.login-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.login-box {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  height: 65%;
+  max-width: 350px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.welcome {
+  position: absolute;
+  top: 1.5em; /* Mepet sedikit ke atas */
+  left: 6em;
+  transform: translateX(-50%);
+  font-size: 1.8em;
+  font-weight: 800;
+  color: #027fff;
+  margin: 0;
+  --animate-duration: 3s;
+  /* Pastikan welcome message tetap di atas konten lainnya */
+}
+
+/* Efek Hover pada Kotak Form */
+.login-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.login-img {
+  margin-top: -50px;
+  margin-left: 60px;
+  width: 150px;
+  height: auto;
+  display: block;
+  --animate-duration: 2.5s;
+}
+
+h2 {
+  margin-top: -10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #027fff;
+}
+
+.textbox {
+  margin-bottom: 10px;
+  --animate-duration: 2.5s;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.textbox input:focus {
+  border-color: #007bff;
+}
+
+::placeholder {
+  font-weight: 500;
+  color: #222;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #027fff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  --animate-duration: 2.8s;
+}
+
+.btn:hover {
+  background-color: #7db1ff;
+}
+
+/* Bagian Kanan - Konten (gambar dan teks) */
+.content-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 20px 5px;
+  background-color: #e6f2ff;
+  --animate-duration: 1.5s;
+}
+
+.content-container h1 {
+  align-self: flex-end;
+  font-size: 18px;
+  margin-right: 20px;
+  color: #027fff;
+  margin-bottom: 10px;
+  --animate-duration: 2.5s;
+}
+
+.content-container p {
+  margin-top: -5px;
+  margin-right: 20px;
+  font-size: 15px;
+  align-self: flex-end;
+  font-weight: 500;
+  color: #2b2a2a;
+  margin-bottom: 50px;
+  --animate-duration: 2.7s;
+}
+
+label {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.content-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: -135px;
+  --animate-duration: 2s;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  .welcome {
+    display: block;
+    position: relative;
+  }
+  .container {
+    display: block;
+    width: 90%;
+    height: auto;
+    flex-direction: column; /* Menyusun elemen secara vertikal pada layar kecil */
+  }
+
+  .login-container {
+    width: 100%; /* Membuat form login penuh lebar */
+    margin-bottom: 20px; /* Memberikan jarak antara form dan konten */
+  }
+
+  .content-container {
+    width: 100%; /* Membuat konten penuh lebar */
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 18px; /* Mengurangi ukuran font judul pada layar kecil */
+  }
+
+  .textbox input {
+    padding: 12px; /* Menambahkan padding lebih banyak pada input di layar kecil */
+  }
+
+  .btn {
+    padding: 12px; /* Menambahkan padding lebih banyak pada tombol di layar kecil */
+  }
+
+  .content-container h1 {
+    font-size: 14px; /* Mengurangi ukuran font h1 pada layar kecil */
+  }
+
+  .content-container p {
+    font-size: 16px; /* Mengurangi ukuran font paragraf pada layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-img {
+    width: 120px; /* Mengurangi ukuran gambar di layar sangat kecil */
+  }
+
+  h2 {
+    font-size: 16px; /* Mengurangi ukuran font judul lebih lanjut */
+  }
+}
