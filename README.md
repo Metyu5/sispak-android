@@ -10,7 +10,7 @@ SISPak Android adalah aplikasi sistem pakar untuk mendiagnosis penyakit pada ika
 - 🔑 **Login & Register:** Sistem autentikasi untuk pengguna.
 
 ## 🛠 Teknologi yang Digunakan
-- **Android:** Java (Android Studio)
+- **Android:** Java (Android Studio Versi 2024 1.1 Koala )
 - **Backend API:** PHP Native (XAMPP)
 - **Database:** MySQL
 - **Version Control:** Git & GitHub
