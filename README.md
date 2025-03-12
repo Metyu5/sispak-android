@@ -47,5 +47,5 @@ Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau
 </table>
 
 
-Kalau ada tambahan atau bagian yang perlu direvisi, salam developer ! 🚀🔥
+Kalau ada tambahan atau bagian yang perlu direvisi mari kita diskusikan lebih lanjut, salam developer ! 🚀🔥
 
