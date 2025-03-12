@@ -36,7 +36,8 @@ SISPak Android adalah aplikasi sistem pakar untuk mendiagnosis penyakit pada ika
 Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau buka issue di repository ini.  
 
 ---
-<img src="https://raw.githubusercontent.com/Metyu5/sispak-android/main/Screenshot%20(61).png" width="400">
+<img src="https://raw.githubusercontent.com/Metyu5/sispak-android/main/WhatsApp%20Image%202025-01-27%20at%2022.36.40_8fa60e11.jpg" width="400">
+
 
 
 Kalau ada tambahan atau bagian yang perlu direvisi, marjo torang ngoding ! 🚀🔥
