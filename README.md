@@ -1,4 +1,4 @@
-# SISPak Android
+# SISPAK Android
 
 SISPak Android adalah aplikasi sistem pakar untuk mendiagnosis penyakit pada ikan cupang (Betta Fish) menggunakan metode **Backward Chaining** dan **Certainty Factor (CF)**. Aplikasi ini dikembangkan menggunakan **Java** untuk Android, dengan backend berbasis **PHP Native** yang terhubung melalui **API di XAMPP**.
 
@@ -17,7 +17,7 @@ SISPak Android adalah aplikasi sistem pakar untuk mendiagnosis penyakit pada ika
 
 ## 📥 Cara Menjalankan Proyek
 ### 1️⃣ **Setup Backend**
-1. Clone repository atau pindahkan folder proyek backend ke dalam `htdocs` XAMPP.
+1. Clone repository atau pindahkan folder proyek backend yang ada didalam folder assets terus pindahkan ke dalam `htdocs` XAMPP.
 2. Import database `db_bettafish.sql` ke MySQL melalui phpMyAdmin.
 3. Jalankan XAMPP (Start Apache & MySQL).
 
