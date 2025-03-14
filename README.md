@@ -1,41 +1,42 @@
-# SISPAK Android
+# **SISPAK Android: Expert System for Betta Fish Disease Diagnosis**
 
-SISPak Android adalah aplikasi sistem pakar untuk mendiagnosis penyakit pada ikan cupang (Betta Fish) menggunakan metode **Backward Chaining** dan **Certainty Factor (CF)**. Aplikasi ini dikembangkan menggunakan **Java** untuk Android, dengan backend berbasis **PHP Native** yang terhubung melalui **API di XAMPP**.
+SISPAK Android is an expert system application designed to diagnose diseases in Betta fish using the **Backward Chaining** inference method combined with the **Certainty Factor (CF)** approach. The application is developed using **Java** for Android, with a **PHP Native** backend connected via **APIs hosted on XAMPP**.
 
-## 📌 Fitur Utama
-- 🔍 **Diagnosis Penyakit:** Pengguna dapat memilih penyakit terlebih dahulu, lalu memilih gejala yang sesuai.
-- 📊 **Perhitungan Certainty Factor (CF):** Menghitung tingkat kepastian berdasarkan gejala yang dipilih.
-- 📂 **Manajemen Data Penyakit & Gejala:** Data penyakit dan gejala dikelola melalui website berbasis PHP.
-- 🛠 **Riwayat Diagnosis:** Menampilkan histori hasil diagnosis pengguna sebelumnya.
-- 🔑 **Login & Register:** Sistem autentikasi untuk pengguna.
+## **📌 Key Features**
+- 🔍 **Disease Diagnosis:** Users select a disease first and then choose the corresponding symptoms.
+- 📊 **Certainty Factor (CF) Calculation:** Determines the confidence level of a diagnosis based on selected symptoms.
+- 📂 **Disease & Symptom Management:** Data on diseases and symptoms is managed via a PHP-based web interface.
+- 🛠 **Diagnosis History:** Displays previous user diagnoses for reference.
+- 🔑 **User Authentication:** Login and registration system to ensure secure access.
 
-## 🛠 Teknologi yang Digunakan
-- **Android:** Java (Android Studio Versi 2024 1.1 Koala )
+## **🛠 Technologies Used**
+- **Android Development:** Java (Android Studio 2024 1.1 Koala)
 - **Backend API:** PHP Native (XAMPP)
-- **Database:** MySQL
+- **Database Management:** MySQL
 - **Version Control:** Git & GitHub
 
-## 📥 Cara Menjalankan Proyek
-### 1️⃣ **Setup Backend**
-1. Clone repository atau pindahkan folder proyek backend yang ada didalam folder assets terus pindahkan ke dalam `htdocs` XAMPP.
-2. Import database `db_bettafish.sql` ke MySQL melalui phpMyAdmin.
-3. Jalankan XAMPP (Start Apache & MySQL).
+## **📥 How to Run the Project**
+### 1️⃣ **Backend Setup**
+1. Clone the backend repository or move the backend project folder (located in the assets folder) to the `htdocs` directory in XAMPP.
+2. Import the `db_bettafish.sql` database into MySQL using phpMyAdmin.
+3. Start XAMPP and run Apache & MySQL services.
 
-### 2️⃣ **Setup Android App**
-1. Clone repository Android ini di Android Studio.
-2. Pastikan backend sedang berjalan.
-3. Sesuaikan konfigurasi URL API di dalam kode Android.
-4. Jalankan aplikasi di emulator atau perangkat fisik.
+### 2️⃣ **Android Application Setup**
+1. Clone the Android repository in Android Studio.
+2. Ensure the backend is running properly.
+3. Adjust the API URL configuration in the Android project source code.
+4. Run the application on an emulator or a physical device.
 
-## 📌 TODO / Pengembangan Selanjutnya
-- [ ] **Penyempurnaan UI/UX** agar lebih user-friendly.
-- [ ] **Penambahan fitur rekomendasi pengobatan.**
-- [ ] **Integrasi Firebase untuk autentikasi yang lebih aman.**
+## **📌 Future Enhancements**
+- [ ] **Improving UI/UX** to enhance user experience.
+- [ ] **Adding Treatment Recommendations** to provide users with suggested solutions.
+- [ ] **Integrating Firebase Authentication** for enhanced security.
 
-## 🤝 Kontribusi
-Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau buka issue di repository ini ✌️.  
+## **🤝 Contribution**
+We welcome contributions! If you want to improve this project or provide feedback, feel free to submit a pull request or open an issue in the repository. ✌️
 
 ---
+
 <table align="center">
   <tr>
     <td><img src="https://raw.githubusercontent.com/Metyu5/sispak-android/main/WhatsApp%20Image%202025-01-27%20at%2022.36.40_8fa60e11.jpg" width="200"></td>
@@ -46,6 +47,4 @@ Jika ingin berkontribusi atau memberikan masukan, silakan buat pull request atau
   </tr>
 </table>
 
-
-Kalau ada tambahan atau bagian yang perlu direvisi mari kita diskusikan lebih lanjut, salam developer ! 🚀🔥
-
+If you have any suggestions or improvements, let's discuss them further. Happy coding! 🚀🔥
